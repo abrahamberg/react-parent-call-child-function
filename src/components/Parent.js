@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import Chat from './Chat';
 
 const ParentComponent = () => {
@@ -11,9 +11,10 @@ const ParentComponent = () => {
         }
     };
 
-    const setReceiveMessage = (callback) => {
+    const setReceiveMessage = useCallback((callback) => {
         receiveMessage = callback;
-    };
+    }, []); // dependencies array is empty, meaning this function is created once
+
 
     // Additional logic for handling external message sources...
 
