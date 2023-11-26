@@ -43,6 +43,9 @@ You can run and experiment with this project in several ways:
 2. Use GitHub Codespaces to open and run the project in a fully configured development environment in your browser.
 
 After running the project, you can access the application at `http://localhost:3000` in your web browser.
+```
+   npm run dev
+```
 
 ## Feedback and Contributions
 
