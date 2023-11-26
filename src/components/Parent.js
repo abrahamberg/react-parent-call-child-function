@@ -1,5 +1,5 @@
 import React from 'react';
-import ChatComponent from './ChatComponent';
+import Chat from './Chat';
 
 const ParentComponent = () => {
     let receiveMessage;
@@ -19,7 +19,7 @@ const ParentComponent = () => {
 
     return (
         <div>
-            <ChatComponent 
+            <Chat 
                 onSend={handleMessageSend} 
                 onReceiveMessage={setReceiveMessage} 
             />
